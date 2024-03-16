@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/hce_host_apdu_service_description"
+    android:requireDeviceUnlock="false"
+    android:apduServiceBanner="@raw/mytag_banner"> <!-- 260x96 drawable -->
+
+    <aid-group android:description= "@string/aid_group_description_payment" android:category="payment">
+
+        <!-- Select PPSE -->
+        <aid-filter android:name="325041592E5359532E4444463031" android:description="@string/aid_description_ppse"/> <!-- PPSE = "2PAY.SYS.DDF01" -->
+
+        <!-- VISA -->
+        <aid-filter android:name="A0000000031010"/>
+
+        <!-- MASTERCARD -->
+        <aid-filter android:name="A0000000041010"/>
+
+        <!-- CB -->
+        <aid-filter android:name="A0000000421010"/>
+
+        <!-- BUZZ -->
+        <aid-filter android:name="A0000000991010"/>
+
+    </aid-group>
+
+</host-apdu-service>
+
+
+
+

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyNfcTag</string>
+
+    <string name="hce_host_apdu_service_description">MyTag HCE (host)</string>
+    <string name="aid_group_description_payment">GroupAidPayment</string>
+    <string name="aid_description_visa">VISA</string>
+    <string name="aid_description_mastercard">MASTERCARD</string>
+    <string name="aid_description_cb">CB</string>
+    <string name="aid_description_buzz">BUZZ</string>
+    <string name="aid_description_ppse">PPSE</string>
+
+</resources>
